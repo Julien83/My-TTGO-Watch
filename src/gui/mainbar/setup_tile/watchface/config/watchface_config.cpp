@@ -38,8 +38,8 @@ bool watchface_config_t::onLoad(JsonDocument& doc) {
     /**
      * force use own theme url on alpha/beta tests
      */
-    // watchface_theme_url = doc["watchface_theme_url"] | WATCHFACE_THEME_URL;
-    watchface_theme_url = WATCHFACE_THEME_URL;
+    watchface_theme_url = doc["watchface_theme_url"] | WATCHFACE_THEME_URL;
+    //watchface_theme_url = WATCHFACE_THEME_URL;
     return true;
 }
 
